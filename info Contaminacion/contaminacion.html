@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>contaminacion</title>
+    <link rel="stylesheet" href="./style_cont.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu despleglable -->
+    <div id="barra_menu">
+        <img id="logo" src="../img/logo_sin_fondo.jpg">
+        <h1 id="nombre">Nombre de la web</h1>
+        <img id="usuario" onclick="mostrarDatosUsu()" src="../img/circle-user-regular.svg">
+        <img id="logo_menu" onclick="mostrarMenu()" src="../img/bars-solid.svg">
+    </div>
+
+    <div id="info_usu">
+        <p><img id="logo_admin" class="logo_s" src="../img/user-solid.svg"><b>Nombre de usuario</b></p>
+        <p><img class="logo_s" src="../img/map-location-dot-solid.svg"><b>Comunidad autonoma</b></p>
+        <p><img class="logo_s" src="../img/arrow-right-from-bracket-solid.svg"><b>Cerrar Sesión</b></p>
+    </div>
+
+    <div id="menu">
+        <a id="inicio" href="#"><img class="logo_m" src="../img/house-solid.svg"><b class="texto">Inicio</b></a>
+        <a id="equipo" href="#"><img class="logo_m" src="../img/users-solid.svg"><b class="texto">Equipo</b></a>
+        <a id="eventos" href="#"><img class="logo_m" src="../img/earth-europe-solid.svg"><b class="texto">Eventos</b></a>
+    </div>
+
+    <!-- Informacion -->
+    <div id="info">
+        <h1 id="titulo">TITULO</h3>
+        <div id="informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum tincidunt arcu, ut pretium ex semper non. 
+            Sed tellus lacus, consectetur eget nunc id, tempus hendrerit massa. Cras molestie nunc eu libero tristique, nec bibendum enim venenatis. 
+            Mauris lacinia dignissim ex, id posuere justo. Nunc malesuada porta urna, in tristique ipsum luctus eget. Donec auctor arcu eu egestas hendrerit. 
+            Phasellus rhoncus, neque vel euismod ultricies, metus odio consectetur neque, vel tincidunt nisi ipsum luctus nisl.
+            <br><br>
+            Morbi mauris lorem, ullamcorper eget nulla a, varius feugiat velit. Aliquam nisl nibh, euismod ut orci ac, scelerisque cursus eros. 
+            Ut at odio felis. Duis consectetur vulputate dolor, id iaculis turpis ultricies id. Praesent scelerisque suscipit consequat. 
+            Phasellus at magna lorem. Morbi imperdiet, lectus eget feugiat blandit, dolor dui facilisis est, at tristique leo nunc et leo. 
+            Ut non eros in lorem finibus auctor vel ut ligula. Sed id tortor a tellus venenatis suscipit id imperdiet felis.
+            <br><br>
+            Donec sed nibh commodo, bibendum erat in, sodales eros. Suspendisse aliquam dolor urna, sit amet interdum lacus dignissim vitae. 
+            Aenean nec magna at orci varius auctor eu eu velit. Curabitur tristique imperdiet arcu, sed rutrum mauris porta nec. 
+            Donec ornare ex ac metus hendrerit tincidunt ac sed purus. Vestibulum a est quis mi venenatis imperdiet sed a ex. 
+            Nulla eget purus non nisi dapibus commodo eget ut ante. Etiam sed pretium leo, eget vulputate tellus. 
+            Sed molestie, felis a bibendum fringilla, sem libero tempus felis, nec scelerisque lorem urna eu tortor. 
+            Etiam ligula ligula, commodo id consequat sodales, lacinia at turpis. Suspendisse potenti. Integer sodales dolor a iaculis aliquet. 
+            Curabitur auctor augue at erat pellentesque tempus. Sed commodo consequat eros id ornare. In hac habitasse platea dictumst.
+        </div>
+        <div id="informacion2">    
+            Sed vulputate in tortor id laoreet. Aliquam egestas hendrerit hendrerit. Phasellus interdum ac purus id placerat. 
+            Integer consectetur lectus sagittis sapien aliquet accumsan. Vestibulum sit amet augue ultricies, vehicula neque eu, aliquet mi. 
+            Vestibulum sollicitudin vitae enim non mattis. Quisque ultricies, est sit amet varius tempor, turpis mauris laoreet ante, sit amet ornare arcu nisl sit amet dolor. 
+            Nam vitae volutpat enim, quis iaculis ante.
+            <br><br>
+            Vestibulum ligula justo, mattis at luctus id, sagittis vitae nunc. Nam et mauris id leo semper dignissim. In hac habitasse platea dictumst. 
+            Etiam pharetra magna at blandit mattis. Etiam ex massa, sodales porta turpis vel, pharetra finibus dui. Nam nec tincidunt tellus. 
+            Curabitur congue sit amet purus nec interdum. Nam at condimentum magna, vitae venenatis diam. Maecenas non rutrum ipsum. 
+            Etiam id elit semper, tempor quam vulputate, convallis lorem. Quisque mattis diam et interdum dapibus. Praesent mattis libero vitae velit volutpat faucibus. 
+            Curabitur quis lacus scelerisque ante tempus tempus.</div>
+        <a id="linkEventos">LINK</a>
+        <img id="img1" src="../images/project-1-thumb.jpg">
+        <img id="img2" src="../images/project-6-thumb.jpg">
+        <iframe src="../mapa interactivo cont maritima/index.html" id="mapa"></iframe>
+    </div>
+
+    <footer>
+		<div class="wrapper">
+			<a class="logo" href="#">Chase</a>
+			<div class="footer-left">
+				<p class="copyright">Copyright 2016 &copy; Chase</p>
+				<p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a></p>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="social facebook">Facebook</a>
+				<a href="#" class="social twitter">Facebook</a>
+				<a href="#" class="social google">Facebook</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+</body>
+<script src="./js_menu.js"></script>
+
+</html>
