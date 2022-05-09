@@ -86,7 +86,7 @@ body {
     margin: 0%;
 }
 
-.p:hover{
+#cerrarSesion:hover{
     background-color: white;
 
 }
@@ -229,6 +229,7 @@ footer .footer-left {
 footer .footer-right {
 	float: right;
 	margin-top: 20px;
+    margin-right: 25px;
 	text-align: right;
 }
 
