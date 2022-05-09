@@ -1,0 +1,287 @@
+/* CSS Document */
+*, *::after, *::before {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    line-height: 1.7rem;
+    color: #fff;
+    background-color: white;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+} 
+.clear {
+	clear: both;
+}
+.bg {
+	width: 90rem;
+	height: 67rem;
+	background-image: url(../img/bg.svg);
+	margin: 2rem auto;
+	position: relative;
+	box-shadow: 0 1rem 3rem -.4rem rgba(255, 255, 255, 0.6);
+	border-radius: 1rem;
+	margin-bottom: 5rem;
+}
+.point {
+	position: absolute;
+	width: 1.3rem;
+	height: 1.3rem;
+	background-color: #3f3d3d;
+	border-radius: 50%;
+	cursor: pointer;
+	background-image: url(../img/cross.svg);
+	transition: .5s ease-in-out;
+}
+.point:hover {
+	transform: rotate(90deg);
+}
+.point::after {
+    width: 3.9rem;
+    height: 3.9rem;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #3f3d3d;
+	border-radius: 50%;
+	opacity: 0;
+	margin: -1.3rem 0 0 -1.3rem;
+	animation: waves 20s infinite;
+}
+@keyframes waves {
+  0% {
+    transform: scale(0);
+  }
+  1% {
+    opacity: .7;
+  }
+  5% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.info {
+	width: 25rem;
+	height: 20rem;	
+	position: absolute;
+	top: 5rem;
+    left: -8rem;
+	transform: rotate(-90deg);
+	display: none;
+}
+.point:hover .info {
+	display: block;
+}
+.content_container {
+	background-color: #dfdce3;
+	box-shadow: 0 1rem 3.1rem -.4rem rgba(128, 91, 67, 0.6);
+	border-radius: .7rem;
+	position: absolute;
+	animation: appear 1s;
+	transition: 1s;
+}
+.content_container:before {
+	content: '';
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 5.5rem;
+    left: 99%;
+	border-style: solid;
+	border-width: .75rem 0 .75rem .8rem;
+	border-color: transparent transparent transparent #dfdce3;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+	opacity: 0;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.title {
+	width: 25rem;
+	height: 4rem;
+	background-color: #a58fdb;
+	border-radius: .7rem .7rem 0 0;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+}
+.text {
+	padding: 2rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #777;
+}
+
+
+#madrid {
+    top: 26rem;
+    left: 47.5rem;
+}
+#andalucia {
+    top: 45rem;
+    left: 36.5rem;
+	
+}
+#andalucia::after {
+	animation-delay: 1s;	
+}
+#asturias {
+    top: 4.5rem;
+    left: 36.5rem;
+}
+#asturias::after {
+	animation-delay: 2s;
+}
+#aragon {
+    top: 18rem;
+    left: 61.5rem;
+}
+#aragon::after {
+	animation-delay: 3s;
+}
+#cantabria {
+    top: 4.8rem;
+    left: 46.3rem;
+}
+#cantabria::after {
+	animation-delay: 4s;
+}
+#catalunia {
+    top: 17rem;
+    left: 77rem;
+}
+#catalunia::after {
+	animation-delay: 5s;
+}
+#valencia {
+    top: 31.5rem;
+    left: 64rem;
+}
+#valencia::after {
+	animation-delay: 6s;
+}
+#murcia {
+    top: 41rem;
+    left: 60rem;
+}
+#murcia::after {
+	animation-delay: 7s;
+}
+#galicia {
+    top: 8.5rem;
+    left: 22.5rem;
+}
+#galicia::after {
+	animation-delay: 8s;
+}
+#paisvasco {
+    top: 8.5rem;
+    left: 52.3rem;
+    z-index: 3000;
+}
+#paisvasco::after {
+	animation-delay: 9s;
+}
+#navarra {
+    top: 9.5rem;
+    left: 57rem;
+}
+#navarra::after {
+	animation-delay: 10s;
+}
+#extremadura {
+    top: 36rem;
+    left: 33.5rem;
+}
+#extremadura::after {
+	animation-delay: 11s;
+}
+#rioja{
+    top: 11.5rem;
+    left: 53rem;
+}
+#rioja::after {
+	animation-delay: 12s;
+}
+#ceuta {
+    top: 56.5rem;
+    left: 38rem;
+}
+#ceuta::after {
+	animation-delay: 13s;
+}
+#melilla {
+    top: 60.2rem;
+    left: 51.5rem;
+}
+#melilla::after {
+	animation-delay: 14s;
+}
+#canarias {
+    top: 59.5rem;
+    left: 13rem;
+}
+#canarias::after {
+	animation-delay: 15s;
+}
+#baleares{
+    top: 29.5rem;
+    left: 81rem;
+}
+#baleares::after {
+	animation-delay: 16s;
+}
+#castilla-la_mancha {
+    top: 30.5rem;
+    left: 44rem;
+}
+#castilla-la_mancha::after {
+	animation-delay: 17s;
+}
+#castilla_leon {
+	top: 16.5rem;
+    left: 40.5rem;
+}
+#castilla_leon::after {
+	animation-delay: 18s;
+}
+
+
+/* https://github.com/LorenaSanchezT/ProyectoFinal */
+
+
