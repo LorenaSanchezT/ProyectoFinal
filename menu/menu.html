@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>menu</title>
+    <link rel="stylesheet" href="./style_menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <script src="./js_menu.js"></script>
+</head>
+
+
+<body onload="cambioColores()">
+    <!-- Menu despleglable -->
+    <div id="menu_desplegable">
+        <div id="barra_menu">
+            <img id="logo_web" src="../img/logo_sin_fondo.jpg">
+            <h1 id="nombre_web">Nombre de la web</h1>
+            <div id="cont_logo_usu" onclick="mostrarDatosUsu()"><img id="logo_usu" src="../img/circle-user-regular.svg">
+            </div>
+            <div id="cont_logo_menu" onclick="mostrarMenu()"><img id="logo_menu" src="../img/bars-solid.svg"></div>
+        </div>
+
+        <div id="info_usu">
+            <p class="p"><img id="logo_admin" class="logo_u" src="../img/user-solid.svg"><b>Nombre de usuario</b></p>
+            <p class="p"><img class="logo_u" src="../img/map-location-dot-solid.svg"><b>Comunidad autonoma</b></p>
+            <p class="p" id="cerrarSesion"><img class="logo_u" src="../img/arrow-right-from-bracket-solid.svg"><b>Cerrar
+                    Sesión</b></p>
+        </div>
+
+        <div id="menu">
+            <a id="inicio" class="a" href="../index.html"><img class="logo_m" src="../img/house-solid.svg"><b
+                    class="texto">Inicio</b></a>
+            <a id="equipo" class="a" href="../Equipo/equipo.html"><img class="logo_m" src="../img/users-solid.svg"><b
+                    class="texto">Equipo</b></a>
+            <a id="eventos" class="a" href="#"><img class="logo_m" src="../img/earth-europe-solid.svg"><b
+                    class="texto">Eventos</b></a>
+        </div>
+    </div>
+</body>
+
+
+</html>
