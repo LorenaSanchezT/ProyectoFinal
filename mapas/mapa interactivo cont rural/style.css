@@ -133,7 +133,7 @@ ul, ol {
 .title {
 	width: 25rem;
 	height: 4rem;
-	background-color: #a58fdb;
+	background-color: #a6ff4dc2;
 	border-radius: .7rem .7rem 0 0;
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -212,6 +212,7 @@ ul, ol {
 #paisvasco {
     top: 8.5rem;
     left: 52.3rem;
+    z-index: 3000;
 }
 #paisvasco::after {
 	animation-delay: 9s;
