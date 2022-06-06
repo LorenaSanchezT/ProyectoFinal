@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Chase Landing Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/enlaces.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/featherlight.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="./js/js_menu_inicio.js"></script>
+
+</head>
+
+<body onload="insertarPuntos(), loadEventos(), comprobarInicioSesion(), nombrePagina('./index.html')">
+	<header id="top">
+		<div id="barra_inicio">
+			<h1 class="logo"><img src="./img/logo sin fondo.png"></h1>
+			<nav>
+				<ul id="navigation">
+					<li><a href="./equipo.html">Conocenos</a></li>
+					<li><a class="nav-cta" onclick="mostrarLogin()">Iniciar sesión</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Menu despleglable -->
+	<div id="menu_desplegable">
+		<div id="barra_menu">
+			<img id="logo_web" src="./img/logo sin fondo.png">
+			<h1 id="nombre_web">Nombre de la web</h1>
+			<div id="cont_logo_usu" onclick="mostrarDatosUsu()"><img id="logo_usu" src="./img/circle-user-regular.svg">
+			</div>
+			<div id="cont_logo_menu" onclick="mostrarMenu()"><img id="logo_menu" src="./img/bars-solid.svg"></div>
+		</div>
+
+		<div id="info_usu">
+			<p class="p"><img id="logo_admin" class="logo_u" src="./img/user-solid.svg"><b
+					id="texto_nombre_usuario">Nombre de usuario</b></p>
+			<p class="p"><img class="logo_u" src="./img/map-location-dot-solid.svg"><b
+					id="texto_comunidad_autonoma">Comunidad autonoma</b></p>
+			<a class="p" id="cerrarSesion" onclick="cerrarSesion()"><img class="logo_u"
+					src="./img/arrow-right-from-bracket-solid.svg"><b>Cerrar Sesión</b></a>
+		</div>
+
+		<div id="menu">
+			<a id="inicio" class="a" href="./index.html"><img class="logo_m" src="./img/house-solid.svg"><b
+					class="texto">Inicio</b></a>
+			<a id="equipo" class="a" href="./equipo.html"><img class="logo_m" src="./img/users-solid.svg"><b
+					class="texto">Equipo</b></a>
+			<a id="eventos" class="a" href="./eventosSinSesion.html"><img class="logo_m"
+					src="./img/earth-europe-solid.svg"><b class="texto">Eventos</b></a>
+			<a id="confirmEventos" class="a" href="./listaEventosConfirmar.html"><img class="logo_m"
+					src="./img/earth-europe-solid.svg"><b class="texto">Confirmar Eventos</b></a>
+		</div>
+	</div>
+
+
+	<section id="banner">
+		<div id="wrapper-imagenes">
+			<h2>Chase</h2>
+			<div class="buttons">
+				<button id="iniciarSesion" onclick="mostrarLogin()">Iniciar sesión</button>
+				<button id="crearCuenta" onclick="mostrarAlta()">Crear cuenta</button>
+			</div>
+		</div>
+		<div id="imagen">
+			<img class="img_banner" id="imagen-fondo">
+		</div>
+		<div class="flechas">
+			<a class="anterior" onclick="cambiarBanner(-1)"><img src="./img/flecha_izquierda_blanca.svg"></a>
+			<a class="siguiente" onclick="cambiarBanner(1)"><img src="./img/flecha_derecha_blanca.svg"></a>
+		</div>
+		<div id="puntos">
+		</div>
+	</section>
+
+	<section class="portfolio-section">
+		<h3 id="tituloCont">Contaminacion</h3>
+		<p class="subtitle">Tipos de Contaminacion</p>
+
+		<ul class="portfolio-list">
+			<li class="item">
+				<a id="maritima" class="photo-overlay">
+					<img src="images/project-1-thumb.jpg" alt="" />
+				</a>
+				<div class="texto-oculto" onclick="cambioTipoCont('maritima')">
+					<h6>Contaminacion maritima</h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut tristique et egestas quis ipsum. Feugiat nisl pretium fusce id velit ut
+					tortor pretium viverra. Sit amet consectetur adipiscing elit duis. Ultricies integer quis auctor
+					elit sed. Condimentum id venenatis a condimentum vitae sapien. In fermentum posuere urna nec
+					tincidunt praesent. Integer eget aliquet nibh praesent tristique magna. Ultrices gravida dictum
+					fusce ut.
+				</div>
+			</li>
+			<li class="item">
+				<a id="rural" class="photo-overlay">
+					<img src="images/project-2-thumb.jpg" alt="rural" />
+				</a>
+				<div class="texto-oculto" onclick="cambioTipoCont('rural')">
+					<h6>Contaminacion rural</h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut tristique et egestas quis ipsum. Feugiat nisl pretium fusce id velit ut
+					tortor pretium viverra. Sit amet consectetur adipiscing elit duis. Ultricies integer quis auctor
+					elit sed. Condimentum id venenatis a condimentum vitae sapien. In fermentum posuere urna nec
+					tincidunt praesent. Integer eget aliquet nibh praesent tristique magna. Ultrices gravida dictum
+					fusce ut.
+				</div>
+			</li>
+			<li class="item">
+				<a id="urbana" class="photo-overlay">
+					<img src="images/project-3-thumb.jpg" alt="" />
+				</a>
+				<div class="texto-oculto" onclick="cambioTipoCont('urbana')">
+					<h6>Contaminacion urbana</h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut tristique et egestas quis ipsum. Feugiat nisl pretium fusce id velit ut
+					tortor pretium viverra. Sit amet consectetur adipiscing elit duis. Ultricies integer quis auctor
+					elit sed. Condimentum id venenatis a condimentum vitae sapien. In fermentum posuere urna nec
+					tincidunt praesent. Integer eget aliquet nibh praesent tristique magna. Ultrices gravida dictum
+					fusce ut.
+				</div>
+			</li>
+			<div class="clear"></div>
+		</ul>
+
+
+
+		<!-- Footer -->
+		<footer onclick="cerrarDatosUsu(), cerrarMenu()">
+			<div id="wrapper-footer">
+				<a class="logo" href="#">Chase</a>
+				<div class="footer-left">
+					<p class="copyright">Copyright 2022 &copy; Chase</p>
+					<p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a
+							href="#">Privacy</a></p>
+				</div>
+				<div class="footer-right">
+					<a href="#" class="social facebook">Facebook</a>
+					<a href="#" class="social twitter">Facebook</a>
+					<a href="#" class="social google">Facebook</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+
+		<!-- Desplegable laterar con eventos con más likes -->
+		<div id="flecha-apertura" onclick="abrirDesplegable()"></div>
+		<div id="desplegable-eventos">
+			<div id="contenedor-eventos">
+				<div id="eventos-likes">
+					<h5>Eventos con más Likes</h5>
+					<br>
+				</div>
+				<div id="eventos-recientes">
+					<h5>Eventos añadidos recientemente</h5>
+					<br>
+				</div>
+				<div id="eventos-proximos">
+					<h5>Eventos proximos</h5>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<!-- login -->
+		<section id="login" class="login-list-section">
+			<h3>Iniciar sesión</h3>
+			<hr>
+			<form id="formLogin">
+				<input id="emailL" type="text" placeholder="escriba su correo">
+				<input id="passL" type="password" placeholder="escriba su contraseña"> <br>
+				<button id="loginUsu" type="submit" onclick="enviaDatosLogin(event)">iniciar sesión</button> <br>
+				<button id="formNuevaCuenta" onclick="mostrarAlta()" type="button">¿no tiene cuenta? cree una
+					aquí</button>
+			</form>
+			<button id="cerrarLogin" onclick="cerrar()" type="submit">x</button>
+
+		</section>
+
+		<!-- crear cuenta -->
+		<section class="login-list-section" id="mostrarCuenta">
+			<h3>crear cuenta</h3>
+			<hr>
+			<form id="formCuenta">
+				<input id="nombreUsuario" type="text" placeholder="nombre">
+				<input id="emailA" type="text" placeholder="correo"> <br>
+				<input id="passA" type="password" placeholder="contraseña">
+				<input id="passDuplicada" type="password" placeholder="repetir contraseña"><br>
+				<select name="comunidadAutonoma" id="comunidadAutonoma">
+                    <option value="section">Selecciona el tipo de comunidad Autónoma</option>
+                    <option value="Andalucia">Andalucía</option>
+                    <option value="Aragon">Aragón</option>
+                    <option value="Asturias">Asturias</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castilla y Leon">Castilla y León</option>
+                    <option value="Cataluña">Cataluña</option>
+                    <option value="Comunidad Valenciana">Comunidad Valenciana</option>
+                    <option value="Extremadura">Extremadura</option>
+                    <option value="La rioja">La rioja</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Murcia">Murcia</option>
+                    <option value="Navarra">Navarra</option>
+                    <option value="Pais vasco">Pais vasco</option>
+                </select> <br>
+				<input id="casillaVerifica" type="checkbox"/>Marcando esta casilla acepta las <a  id="condicionesLink"  onclick="muestraCondiciones()" href="#">condiciones y términos del servicio</a><br>
+                <p id="condiciones" style="display:none;">El equipo no se hace responsable de las incidencias y problemas que surjan en el transcurso de los eventos</p>			
+				<button id="altaUsu" type="submit" onclick="enviaDatosAlta()">Crear cuenta</button> <br>
+			</form>
+			<button id="cerrar" onclick="cerrar()" type="submit">x</button>
+
+		</section>
+
+		<div id="infoEventosBanner">
+			<div id="textoEventosBanner">
+				<h5 id="nombreEventoBanner">nombre</h5>
+				<div id="horaylugar">
+					<p id="fechaEventoBanner">0000/00/00</p>
+					<p id="lugarEventoBanner">lugar</p>
+				</div>
+				<div id="contTipoContBanner">
+					<p>Tipo Contaminación: </p>
+					<p id="tipoContEventoBanner">tipoCont</p>
+				</div>
+				<p id="ccaaEventoBanner">ccaa</p>
+				<textarea type="text" id="informacionEventoBanner">informacion del evento</textarea>
+				<button id="vermasEventoBanner" onclick="redireccion()">Ver mas</button>
+			</div>
+		</div>
+</body>
+
+</html>
