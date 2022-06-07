@@ -1,0 +1,173 @@
+body {
+	min-width: 100%;
+	width: 98.72vw;
+	height: 100vh !important;
+	margin: 0% !important;
+	display: flex;
+	flex-flow: column nowrap;
+	font-family: 'Work Sans', sans-serif;
+	background: whitesmoke !important;
+
+}
+
+#eventosDisponibles {
+	margin-left: 10% !important;
+	color: #7f221a !important;
+}
+
+#pEventosSinCCAA {
+	margin-top: -5%;
+	margin-left: 5%;
+	color: #D95448;
+
+}
+
+.inputPrincipales {
+	color: #7f221a !important;
+}
+
+.enlacesEventos {
+	text-decoration: none;
+	color: #D95448 !important;
+	width: 50%;
+}
+
+.enlacesEventos:hover {
+	text-decoration: none;
+	color: #42966e;
+}
+
+/*Eventos*/
+
+#sectionEventos {
+	height: 77%;
+	position: relative;
+	top: 10%;
+	background: whitesmoke !important;
+	padding: 100px 0;
+	color: #fff;
+	padding: 0px;
+	width: 100%;
+
+}
+
+#listaEventos {
+	margin-left: 5%;
+}
+
+label {
+	color: #7f221a !important;
+}
+
+/*Formulario con la info que pertenece a los eventos (tipo contaminación y comunidad) */
+#datos {
+	position: relative;
+    right: 5%;
+    padding-left: 75%;
+    width: 30%;
+    text-align: right;
+
+}
+
+/*Div y botones de agregar eventos*/
+
+.login-list-section {
+	position: absolute;
+	top: 98% !important;
+	left: 55%;
+	width: 48%;
+	height: 65%;
+	margin: -30% !important;
+	padding: 1.5% !important;
+	background: #e4d6d5 !important;
+	color: #7f221a;
+	display: none;
+}
+
+.inputAgregaEventos {
+	background: #fbebea !important;
+	color: #7f221a !important;
+	border: 2px solid #7f221a !important;
+ 	margin: 2% 0% 0% 2% !important; 
+	width: 35% !important;
+	height: 10% !important;
+	font-size: 15px !important;
+	padding: 2% !important;
+}
+
+.login-list-section form {
+	width: auto;
+	text-align: center;
+	margin: 1px auto 0 auto !important;
+}
+
+input {
+	background: #fbebea !important;
+	color: #7f221a !important;
+	color: rgba(255, 255, 255, .75);
+	border: 2px solid #7f221a !important;
+	margin: 2px 5px !important;
+	width: 53% !important;
+	height: 45% !important;
+	font-size: 15px !important;
+	padding: 2% !important;
+}
+
+input::placeholder {
+	color: #7f221a;
+}
+
+.login-list-section select {
+	background: #fbebea !important;
+    color: #7f221a !important;
+    border: 2px solid #7f221a !important;
+    margin-top: 1% !important;
+    width: 39% !important;
+    height: 45px !important;
+    font-size: 15px !important;
+    margin-left: 2%!important;
+    padding: 1% !important;
+
+}
+
+.login-list-section select option {
+	background: #c8ead9;
+	color: black;
+	border: 2px solid #eee;
+	font-size: 15px !important;
+
+}
+
+.login-list-section input:focus {
+	outline: none;
+	color: black;
+}
+#infoAgrega{
+	margin-left: 10%!important;
+}
+
+
+#cerrar {
+	position: absolute;
+	width: 6% !important;
+	height: 6% !important;
+	top: 0% !important;
+	left: 93% !important;
+	background-color: transparent!important;
+	padding: 0% !important;
+	border: transparent!important;
+
+}
+
+#guardar {
+	position: absolute;
+	width: 30% !important;
+	top: 88% !important;
+	left: 35% !important;
+	padding: 1% !important;
+	font-size: 15px !important;
+	background: #7f221a !important;
+	border: 2px solid #7f221a !important;
+	color: #fbebea !important;
+
+}
