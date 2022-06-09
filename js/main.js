@@ -415,7 +415,7 @@ function mostrarInfoEventoBanner(nombreEvento) {
                         document.getElementById(arrayTitulos[i]).innerHTML = array[i +1];
                     }
                 }
-                sessionStorage.setItem("tipoCont", array[3]);
+                sessionStorage.setItem("tipoCont", array[4]);
                 tipoContaminacion = sessionStorage.getItem("tipoCont");
 
 
