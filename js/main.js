@@ -44,7 +44,7 @@ function enviaDatosLogin(event) {//función con la que voy a mandar los datos de
         if (this.readyState == 4 && this.status == 200) {
             let text = this.responseText;
             let array = text.split("\t");
-            if (array[3] === "FALSE") {
+            if (array[4] === "FALSE") {
                 alert("Revise usuario y contraseña");
             } else {
                 if (array[0] == "ADMIN") {
@@ -77,7 +77,7 @@ function enviaDatosLogin(event) {//función con la que voy a mandar los datos de
     var pass = document.getElementById("passL").value;
 
     //añadir una condición más con las expresiones regulares para comprobar los datos
-    if (email == "" && pass == "") {
+    if (email == "" || pass == "") {
         window.alert("Rellene los campos")
 
     } else {
